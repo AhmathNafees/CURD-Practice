@@ -87,3 +87,7 @@
 // 5. Close connection
 $conn->close();
 ?>
+
+<?php
+
+?>
