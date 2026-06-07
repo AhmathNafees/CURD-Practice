@@ -84,6 +84,15 @@
         <input type="file" name="image"><br><br>
         <button type="submit" name="submit">Submit</button>
     </form>
+    <div>
+        <?php
+            $res = mysqli_query($conn, "SELECT * FROM image");
+            while($row = mysqli_fetch_assoc($res)){
+
+        ?>
+        <img src="images/<?php echo $row['file'] ?>">
+        <?php } ?>
+    </div>
 </body>
 </html>
 <?php
