@@ -26,6 +26,6 @@
     }
 
     //5.close connection
-    $conn->close();
+    $conn->close(); 
 
 ?>

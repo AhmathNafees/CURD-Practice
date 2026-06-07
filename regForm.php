@@ -80,7 +80,10 @@
             </div>
         </div>
     </div>
-
+    <form action="image_upload.php" method="post" enctype="multipart/form-data" >
+        <input type="file" name="image"><br><br>
+        <button type="submit" name="submit">Submit</button>
+    </form>
 </body>
 </html>
 <?php
@@ -88,6 +91,3 @@
 $conn->close();
 ?>
 
-<?php
-
-?>
